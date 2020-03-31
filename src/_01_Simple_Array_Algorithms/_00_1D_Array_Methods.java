@@ -34,17 +34,24 @@ public class _00_1D_Array_Methods {
 	//   It should otherwise return false.
 	public static boolean containsIntValue(int[] array, int value) {
 	
+		boolean re = false;
+		
 		for (int i = 0; i < array.length; i++) {
 			
 			if(array[i] == value) {
 				
-				return true;
+				re = true;
 				
 			}
 			
 		}
 		
-		return false;
+		if(re) {
+			return true;
+		}
+		else {
+			return false;
+		}
 		
 	}
 	
